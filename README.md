@@ -1,3 +1,5 @@
+#This is a fork of https://github.com/Ericwyn/electron-lark with menu items translated into English.
+
 # Electron-Lark
 
  ![release-download-count](https://img.shields.io/github/downloads/Ericwyn/electron-lark/total.svg)

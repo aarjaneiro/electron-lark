@@ -6,7 +6,7 @@
  */
 let template = [
     {
-        label: '操作',
+        label: 'Edit',
         submenu: [
             // {
             //     label: '复制',
@@ -39,18 +39,18 @@ let template = [
         ]
     },
     {
-        label: '窗口',
+        label: 'View',
         role: 'window',
         submenu: [{
-            label: '最小化',
+            label: 'Minimize',
             accelerator: 'CmdOrCtrl+M',
             role: 'minimize'
         }, {
-            label: '关闭',
+            label: 'Close',
             accelerator: 'CmdOrCtrl+W',
             role: 'close'
         }, {
-            label: '切换开发者工具',
+            label: 'Developer Tools',
             accelerator: (function () {
                 if (process.platform === 'darwin') {
                     return 'Alt+Command+I'
@@ -68,7 +68,7 @@ let template = [
         }]
     },
     {
-        label: '帮助',
+        label: 'Help',
         role: 'help',
         submenu: [{
             label: 'Github',
@@ -157,7 +157,7 @@ AppMenu.prototype.init = function( electron ){
     //     }]
     // })
     template[0].submenu.push({
-        label: '退出',
+        label: 'Quit',
         // accelerator: 'Command+Q',
         click: function () {
             electron.app.quit()
@@ -169,7 +169,7 @@ AppMenu.prototype.init = function( electron ){
     if (process.platform === 'darwin') {
         // const name = electron.app.getName()
         template.unshift({
-            label: "飞书",
+            label: "Quit",
             submenu: [{
                 label: 'Quit ( 退出 )',
                 accelerator: 'Command+Q',

@@ -7,7 +7,7 @@ const shell = electron.shell;
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const Menu = electron.Menu;
-if (process.mas) app.setName('飞书Feishu');
+if (process.mas) app.setName('Feishu');
 
 // 是否处于焦点，检点监听
 var onFocus = false;
@@ -123,9 +123,9 @@ let appTryaInstance;
 
 const trayMenuTemplate = [
     {
-        label: '退出',
+        label: 'Quit',
         click: function(){
-            console.log("从 tray 退出")
+            console.log("Feishu-Tray")
             app.quit();
             mainWindow.destroy()
         }
